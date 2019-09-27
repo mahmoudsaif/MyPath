@@ -1,0 +1,9 @@
+static int[] reverseArray(int[] a)
+{
+			int[] temp=new int[a.GetLength(0)];
+			for (int j=0, i= a.GetLength(0)-1; i >-1;j++, i--)
+			{
+				temp[j] = a[i];
+			}
+			return temp;
+}
