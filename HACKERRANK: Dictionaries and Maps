@@ -6,12 +6,12 @@ class Solution
     static void Main(String[] args)
     {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
-        Int32.TryParse(Console.ReadLine(), out int numofEntries);
+        int.TryParse(Console.ReadLine(), out int numofEntries);
         var phonebook = new Dictionary<string, string>();
 
         for (int i = 0; i < numofEntries; i++)
         {
-            string[] PhonesNumber = Console.ReadLine().Split(" ");
+            string[] PhonesNumber = Console.ReadLine().Split(' ');
             phonebook[PhonesNumber[0]] = PhonesNumber[1];
         }
         string query;
